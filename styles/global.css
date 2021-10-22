@@ -1,0 +1,114 @@
+html{
+    /* setar um font-size 10 px para facilitar o cálculo do equivalente rem */
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header h2{
+    
+    
+    margin: 3rem 0 0 3rem;
+}
+
+header h2 a{
+    font-size: 3.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #D2872C;
+}
+
+.container{
+    position: relative;
+}
+
+nav{
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    margin-right: 3rem;
+}
+
+nav li{
+    display: inline;
+    margin-left: 20px;
+}
+
+nav li:hover a{
+    text-decoration: underline;
+    color: #D2872C;
+}
+
+nav a{
+    color:#766F68;
+    font-size: 2.4rem;
+    text-decoration: none;
+    transition: 1s all;
+}
+
+main{
+    margin: 10rem;
+    position: relative;
+}
+main h1{
+    color:#766F68;
+    font-size:8rem;
+    font-weight: bold;
+    display: inline-block;
+    
+    width: 58rem;
+    position:absolute;
+}
+
+main p{
+    top: 20rem;
+    color:#766F68;
+    font-size: 3.4rem;
+    width: 48rem;
+    position: relative;
+
+}
+img {
+    max-width:89vw;
+    max-height:79vh;
+    width: auto;
+    height: auto;
+    display: inline;
+    margin-left: 35vw;
+    margin-top: -14vh;
+}
+
+/* acessibilidade */
+.sr-only{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+
+.button-pattern{
+    background-color: #D2872C;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    width: 22vw;
+    border-radius: 1.8rem;
+    position: relative;
+    top: 28rem;
+    left: .6rem;
+    padding: 1.5rem;
+    transition: 1s all;
+}
+
+.button-pattern:hover{
+    cursor: pointer;
+    background-color:   #7c501b;
+    transform: scale(1.2);
+}
