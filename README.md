@@ -40,7 +40,7 @@
 - [✅] [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - - [] [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
-## → Autora
+## → Author
 
 <p align='center'><a href="https://www.linkedin.com/in/cec%C3%ADlia-brito-santos-a22193170/">Código feito por Cecília Brito</a></p>
 
