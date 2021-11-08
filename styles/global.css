@@ -5,10 +5,15 @@ html{
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+.container{
+    position: relative;
+}
+
 header h2{
-    
-    
-    margin: 3rem 0 0 3rem;
+    margin-left: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
 }
 
 header h2 a{
@@ -18,13 +23,9 @@ header h2 a{
     color: #D2872C;
 }
 
-.container{
-    position: relative;
-}
-
 nav{
     position: absolute;
-    top: 2rem;
+    top: 1.4rem;
     right: 0;
     margin-right: 3rem;
 }
@@ -46,36 +47,44 @@ nav a{
     transition: 1s all;
 }
 
-main{
-    margin: 10rem;
+.principal{
+    margin-left: 8rem;
+    margin-right: 5rem;
     position: relative;
+    display: flex;
+}
+
+.text-principal{
+    width: 48rem;
 }
 main h1{
     color:#766F68;
     font-size:8rem;
     font-weight: bold;
     display: inline-block;
-    
+    position: absolute;
     width: 58rem;
-    position:absolute;
 }
 
 main p{
     top: 20rem;
     color:#766F68;
     font-size: 3.4rem;
-    width: 48rem;
-    position: relative;
+    /* width: 48rem; */
+    position: relative; 
 
 }
+
+.principal-img{
+    display: inline-block;
+    margin-right: -16.8rem;
+}
+
 img {
     max-width:89vw;
     max-height:79vh;
     width: auto;
-    height: auto;
-    display: inline;
-    margin-left: 35vw;
-    margin-top: -14vh;
+    height: auto;  
 }
 
 /* acessibilidade */
@@ -91,24 +100,97 @@ img {
     border-width: 0;
 }
 
+form{
+    width: 100%;
+    margin-left: 8rem; 
+    display: inline-block;
+    position: relative;
+    top: -12rem;
+}
 
 .button-pattern{
     background-color: #D2872C;
-    font-size: 2.4rem;
+    font-size: 3.4rem;
     font-weight: bold;
     color: white;
     border: none;
-    width: 22vw;
-    border-radius: 1.8rem;
-    position: relative;
-    top: 28rem;
-    left: .6rem;
-    padding: 1.5rem;
+    width: 25%;
+    border-radius: 1.4rem;
+    padding: 2rem;
     transition: 1s all;
 }
 
 .button-pattern:hover{
     cursor: pointer;
-    background-color:   #7c501b;
+    background-color: #7c501b;
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 480px) {
+
+    header{
+    position: relative;
+    }
+
+    header h2 a{
+        font-size: 5.4rem;
+        margin-left: 4rem;
+        margin-bottom: 5rem;
+        margin-top: 4rem;
+    }
+    
+   nav{
+       display: none;
+   }
+   .principal{
+       display: block;
+       margin:0;
+   }
+
+   .text-principal{
+        /* display: block; */
+        /* margin-top: 30rem; */
+        position: relative;
+        top: 36rem;
+        
+   }
+
+   .principal h1{
+        font-size: 6rem;
+        display: block;
+        font-weight: bold;
+        text-align: center;
+   }
+
+   .principal p{
+        display: block;
+        font-size: 3rem;
+        text-align: center;
+        margin-left: 4rem;
+        top: 16rem;
+        width: 100%;
+    }
+    .principal-img{
+        position: absolute;
+        top:0;
+        display: block;
+        margin-left: 3rem;
+    }
+   .principal img{
+        max-width: 100%;
+        width: auto;
+        height: auto;
+   }
+   
+   form{
+       position: relative;
+       top:56rem;
+       width: 100%;
+   }
+
+   .button-pattern{
+       width: 75%;
+       margin-left:5.6rem;
+       border-radius: 2.7rem;
+   }
 }

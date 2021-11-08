@@ -2,6 +2,7 @@
 <html lang="pt-br"> 
     <head>
         <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width"/>
         <title>Amazing Graph</title>
         <link rel="stylesheet" href="/styles/reset.css"></link>
         <link rel="stylesheet" href="/styles/global.css"></link>
@@ -24,11 +25,19 @@
             </div>
         </header>
         <main>
-            <h1>Create amazing graphics</h1>
-            <p>Colaborate and create beautiful graphics with your team</p>
-            <label for="start-button" class="sr-only">Start now</label>
-            <input type="button" id="start-button" class="button-pattern" value="Start now">
-            <img src="/assets/team.jpg">
+            <div class="principal">
+                <div class="text-principal">
+                    <h1>Create amazing graphics</h1>
+                    <p>Colaborate and create beautiful graphics with your team</p>
+                </div>
+                <div class="principal-img">
+                    <img src="/assets/team.jpg">
+                </div>
+            </div>
+            <form>
+                <label for="start-button" class="sr-only">Start now</label>
+                <input type="button" id="start-button" class="button-pattern" value="Start now">
+            </form>
         </main>
     </body>
 </html>
