@@ -6,14 +6,18 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.container{
-    position: relative;
-}
-
-header h2{
-    margin-left: 5rem;
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-top: 5rem;
     margin-bottom: 10rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.menu{
+    display: flex;
 }
 
 header h2 a{
@@ -23,15 +27,11 @@ header h2 a{
     color: #D2872C;
 }
 
-nav{
-    position: absolute;
-    top: 1.4rem;
-    right: 0;
-    margin-right: 3rem;
+.mobile-button{
+    display: none;
 }
 
 nav li{
-    display: inline;
     margin-left: 20px;
 }
 
@@ -45,7 +45,10 @@ nav a{
     font-size: 2.4rem;
     text-decoration: none;
     transition: 1s all;
-}
+    display: block;
+    padding: 1rem;
+    }
+
 
 .principal{
     margin-left: 8rem;
@@ -139,9 +142,6 @@ form{
         margin-top: 4rem;
     }
     
-   nav{
-       display: none;
-   }
    .principal{
        display: block;
        margin:0;
@@ -151,7 +151,7 @@ form{
         /* display: block; */
         /* margin-top: 30rem; */
         position: relative;
-        top: 36rem;
+        top: 37rem;
         
    }
 
@@ -193,4 +193,29 @@ form{
        margin-left:5.6rem;
        border-radius: 2.7rem;
    }
+
+   #mobile-button{
+       display: block;
+       position: relative;
+       background-color: rgb(218, 218, 218);
+       height: 2rem;
+       top: -2rem;
+       right: -8rem;
+   }
+
+
+    #menu{
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 6rem;
+        height: 100vh;
+        right: 0;
+        z-index: 1000;
+        background-color: rgb(218, 218, 218);
+    }
+
+    #navigation.active{
+       display: block
+    }
 }
