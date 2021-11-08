@@ -20,7 +20,7 @@
 
 ## → Descrição do Projeto
 
-<p></p>
+<p>Página de destino para criar gráficos - DevChallenge </p>
 
 ## → Status
 
@@ -28,10 +28,12 @@
 
 ## → Features
 <ul>
-<li></li>
-<li></li>
-<li></li>
+<li>HTML</li>
+<li>Desktop Style</li>
+<li>Mobile Style</li>
+<li>Menu Mobile with JS</li>
 </ul>
+
 ## → Tecnologias Utilizadas
 
 - [✅] [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
@@ -40,6 +42,6 @@
 
 ## → Autora
 
-<p><a href="https://www.linkedin.com/in/cec%C3%ADlia-brito-santos-a22193170/">Código feito por Cecília Brito</a></p>
+<p align='center'><a href="https://www.linkedin.com/in/cec%C3%ADlia-brito-santos-a22193170/">Código feito por Cecília Brito</a></p>
 
-<p>Designed by  <a href="https://github.com/Lorenalgm">Lorena</a> :)</p>
+<p align="center">Designed by  <a href="https://github.com/Lorenalgm">Lorena</a> :)</p>
