@@ -165,12 +165,26 @@ form{
          width: auto;
          height: auto;
          z-index: 1000;
-         background-color: #766f6856;
+         background-color: #766f686b;
          color: white;
          position: absolute;
          right: -20rem;
          top: 10rem;
      }
+     ul{
+         margin-top: 3rem;
+     }
+     #menu::before{
+        content: '';
+        display: block;
+        width: 3.6rem;
+        height: 2.4rem;
+        clip-path:  polygon(50% 0%, 0% 100%, 100% 100%);
+        background-color: #766F68;
+        position: absolute;
+         top:-2.5rem;
+        /*right: 11.9rem; */
+    }
  
      #menu li{
          border-bottom:  rgb(230, 230, 230) solid 0.3rem;
