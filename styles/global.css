@@ -132,20 +132,60 @@ form{
 @media screen and (max-width: 480px) {
 
     header{
-    position: relative;
+    width: 100%;
+    /* display:inline-block; */
+    margin: 0;
+    }
+
+    header h2{
+        margin-left: 5rem;
+        margin-bottom: 5rem;
+        margin-top: 4rem;
+        /* display: flex; */
     }
 
     header h2 a{
         font-size: 5.4rem;
-        margin-left: 4rem;
-        margin-bottom: 5rem;
-        margin-top: 4rem;
-    }
-
-    main{
-        margin: 0;
     }
     
+    #mobile-button{
+        display: flex;
+        background-color: rgb(218, 218, 218);
+        padding: 1rem;
+        position: relative;
+        margin-left: 8.5rem;
+    }
+     
+    #navigation{
+        width: 100%;
+    }
+ 
+     #menu{
+         display: none;
+         width: auto;
+         height: auto;
+         z-index: 1000;
+         background-color: #766f6856;
+         color: white;
+         position: absolute;
+         right: -20rem;
+         top: 10rem;
+     }
+ 
+     #menu li{
+         border-bottom:  rgb(230, 230, 230) solid 0.3rem;
+         margin: 0;
+     }
+
+     #menu li a{
+         color:black;
+         padding: 2rem;
+     }
+ 
+     #navigation.active > #menu{
+        display: block;
+     }
+ 
    .principal{
        display: block;
        margin:0;
@@ -198,37 +238,6 @@ form{
        border-radius: 2.7rem;
    }
 
-   #mobile-button{
-       display: block;
-       position: relative;
-       background-color: rgb(218, 218, 218);
-       height: 2rem;
-       top: -2rem;
-       right: -8rem;
-   }
-    
-   #navigation{
-       width: 100%;
-   }
-
-    #menu{
-        display: none;
-        position: absolute;
-        width: auto;
-        top: 6rem;
-        height: auto;
-        z-index: 1000;
-        background-color: #766f6856;
-        color: white;
-    }
-
-    #menu li{
-        border-bottom:  rgba(0, 0, 0, 0.055) solid 0.3rem;
-    }
-
-    #navigation.active > #menu{
-       display: block;
-    }
 
 
 }
