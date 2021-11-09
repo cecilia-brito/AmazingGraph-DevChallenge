@@ -33,7 +33,7 @@
 <li>[✅]Mobile Style</li>
 <li>[ ]Tablet Style</li>
 <li>[✅]Menu Mobile with JS</li>
- <li>[ ]Animation Menu Closed</li>
+ <li>[✅]Animation Menu Closed</li>
 </ul>
 
 ## → Tecnologias Utilizadas
