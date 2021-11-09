@@ -7,4 +7,4 @@ function menuMobile(){
 
 }
 
-buttonMobile.addEventListener('click', menuMobile());
+buttonMobile.addEventListener('click', menuMobile);

@@ -215,7 +215,7 @@ form{
         background-color: rgb(218, 218, 218);
     }
 
-    #navigation .active #menu{
+    #navigation.active > #menu{
        display: block;
     }
 }
