@@ -141,6 +141,10 @@ form{
         margin-bottom: 5rem;
         margin-top: 4rem;
     }
+
+    main{
+        margin: 0;
+    }
     
    .principal{
        display: block;
@@ -202,20 +206,29 @@ form{
        top: -2rem;
        right: -8rem;
    }
-
+    
+   #navigation{
+       width: 100%;
+   }
 
     #menu{
         display: none;
         position: absolute;
-        width: 100%;
+        width: auto;
         top: 6rem;
-        height: 100vh;
-        right: 0;
+        height: auto;
         z-index: 1000;
-        background-color: rgb(218, 218, 218);
+        background-color: #766f6856;
+        color: white;
+    }
+
+    #menu li{
+        border-bottom:  rgba(0, 0, 0, 0.055) solid 0.3rem;
     }
 
     #navigation.active > #menu{
        display: block;
     }
+
+
 }
