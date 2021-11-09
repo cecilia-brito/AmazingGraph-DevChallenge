@@ -165,11 +165,12 @@ form{
          width: auto;
          height: auto;
          z-index: 1000;
-         background-color: #766f686b;
+         background-color:#e2e2e2;
          color: white;
          position: absolute;
          right: -20rem;
          top: 10rem;
+         border-radius: 2rem;
      }
      ul{
          margin-top: 3rem;
@@ -180,15 +181,16 @@ form{
         width: 3.6rem;
         height: 2.4rem;
         clip-path:  polygon(50% 0%, 0% 100%, 100% 100%);
-        background-color: #766F68;
+        background-color: #e2e2e2;
         position: absolute;
-         top:-2.5rem;
-        /*right: 11.9rem; */
+         top:-2rem;
+         margin-left: 1rem;
     }
  
-     #menu li{
-         border-bottom:  rgb(230, 230, 230) solid 0.3rem;
+     #menu li:nth-child(1n){
+         border-bottom:  rgb(253, 252, 252) solid 0.3rem;
          margin: 0;
+         border-radius: 2rem;
      }
 
      #menu li a{
