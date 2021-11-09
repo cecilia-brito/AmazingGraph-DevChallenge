@@ -58,7 +58,7 @@ nav a{
 }
 
 .text-principal{
-    width: 48rem;
+    width: 48rem
 }
 main h1{
     color:#766F68;
@@ -245,32 +245,35 @@ form{
          visibility: visible;
      }
 
- 
+     main{
+         display: flex;
+         align-items: center;
+         margin:0;
+     }
    .principal{
-       display: block;
-       margin:0;
+       display: flex;
+       margin: auto;
    }
 
    .text-principal{
         position: relative;
         top: 37rem;
-        
+        width: 100%;
+        align-items: center;
    }
 
    .principal h1{
         font-size: 6rem;
-        display: block;
         font-weight: bold;
         text-align: center;
    }
 
    .principal p{
-        display: block;
         font-size: 3rem;
-        text-align: center;
-        margin-left: 4rem;
         top: 16rem;
+        margin-left: 10rem;
         width: 100%;
+        text-align: center;
     }
     .principal-img{
         position: absolute;
@@ -285,14 +288,19 @@ form{
    }
    
    form{
-       position: relative;
-       top:56rem;
+       position: absolute;
        width: 100%;
+       top: 78rem;
+       margin-left: 14.5rem;
+       margin-top: 4rem;
    }
 
    .button-pattern{
        width: 75%;
-       margin-left:5.6rem;
        border-radius: 2.7rem;
    }
+}
+
+@media screen and (max-width: 1050px) and (min-width:481px) {
+
 }
