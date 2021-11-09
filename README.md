@@ -28,10 +28,10 @@
 
 ## → Features
 <ul>
-<li>HTML</li>
-<li>Desktop Style</li>
-<li>Mobile Style</li>
-<li>Menu Mobile with JS</li>
+<li>[✅]HTML Structure</li>
+<li>[✅]Desktop Style</li>
+<li>[ ]Mobile Style</li>
+<li>[ ]Menu Mobile with JS</li>
 </ul>
 
 ## → Tecnologias Utilizadas
