@@ -11,7 +11,7 @@ header{
     align-items: center;
     justify-content: space-between;
     margin-top: 5rem;
-    margin-bottom: 10rem;
+    margin-bottom: 7rem;
     margin-left: 5rem;
     margin-right: 5rem;
 }
@@ -51,18 +51,19 @@ nav a{
 
 
 .principal{
-    margin-left: 8rem;
-    margin-right: 5rem;
+    /* margin-left: 8rem;
+    margin-right: 5rem; */
     position: relative;
     display: flex;
 }
 
 .text-principal{
-    width: 48rem
+    width: 48rem;
+    margin-left: 12rem;
 }
 main h1{
     color:#766F68;
-    font-size:8rem;
+    font-size:7rem;
     font-weight: bold;
     display: inline-block;
     position: absolute;
@@ -72,21 +73,22 @@ main h1{
 main p{
     top: 20rem;
     color:#766F68;
-    font-size: 3.4rem;
+    font-size: 2.8rem;
     position: relative; 
-
+    width: 39.05rem;
 }
 
 .principal-img{
     display: inline-block;
-    margin-right: -16.8rem;
+    margin-top: 2rem;
+    margin-right: 4rem;
 }
 
 img {
-    max-width:89vw;
-    max-height:79vh;
+    max-width:86vw;
+    max-height:76vh;
     width: auto;
-    height: auto;  
+    height: auto; 
 }
 
 /* acessibilidade */
@@ -103,23 +105,24 @@ img {
 }
 
 form{
-    width: 100%;
-    margin-left: 8rem; 
+    width: 30rem;
+    margin-left: 12rem; 
     display: inline-block;
     position: relative;
-    top: -12rem;
+    top: -16rem;
 }
 
 .button-pattern{
     background-color: #D2872C;
-    font-size: 3.4rem;
+    font-size: 3rem;
     font-weight: bold;
     color: white;
     border: none;
-    width: 25%;
+    width: 100%;
     border-radius: 1.4rem;
-    padding: 2rem;
+    padding: 1.2rem;
     transition: 1s all;
+    position: absolute;
 }
 
 .button-pattern:hover{
@@ -130,194 +133,192 @@ form{
 
 @media screen and (max-width: 480px) {
 
-    header{
-    width: 100%;
-    margin: 0;
-    }
-
-    header h2{
-        margin-left: 5rem;
-        margin-bottom: 5rem;
-        margin-top: 4rem;
-    }
-
-    header h2 a{
-        font-size: 5.4rem;
-    }
+        header{
+        width: 100vw;
+        margin: 3rem 0 0 0;
+        }
     
-    #mobile-button{
-        display: flex;
-        background-color: rgb(218, 218, 218);
-        padding: 1rem;
-        position: relative;
-        margin-left: 10rem;
-        border: none;
-        background:none;
-        cursor: pointer;
-    }
+        header h2{
+            margin-left: 6rem;
+            margin-bottom: 5rem;
+            margin-top: 4rem;
+        }
+    
+        header h2 a{
+            font-size: 5.4rem;
+        }
 
-    #menu-hamburguer{
-        width: 3.6rem;
-        border-top: solid  black 0.4rem;
-       
-    }
-
-
-    span::before, span::after{
-        content: '';
-        display: block;
-        width: 3.6rem;
-        height: 0.4rem;
-        background: black;
-        margin-top: 0.6rem;
-        margin-bottom: 0.6rem;
-        transition: 0.4s all;
-    }
-
-
-    /* span::after{
-        content: '';
-        display: block;
-        width: 3.6rem;
-        height: 0.4rem;
-        background: black;
+        #navigation{
+            width: 100%;
+            margin-left: 20rem;
+        }
         
-    } */
-
-     
-     
-    #navigation{
-        width: 100%;
-    }
+        #mobile-button{
+            display: flex;
+            background-color: rgb(218, 218, 218);
+            padding: 1rem;
+            position: relative;
+            /* margin-left: 10rem; */
+            border: none;
+            background:none;
+            cursor: pointer;
+        }
     
-    ul{
-        margin-top: 3rem;
-        /* visibility: hidden; */
+        #menu-hamburguer{
+            width: 3.6rem;
+            border-top: solid  black 0.4rem;
+           
+        }
+    
+    
+        span::before, span::after{
+            content: '';
+            display: block;
+            width: 3.6rem;
+            height: 0.4rem;
+            background: black;
+            margin-top: 0.6rem;
+            margin-bottom: 0.6rem;
+            transition: 0.4s all;
+        }
+                  
+        
+    
+         #menu{
+             margin-top: 3rem;
+             visibility: hidden;
+             width: auto;
+             height: auto;
+             z-index: 1000;
+             background-color:#e2e2e2;
+             color: white;
+             position: absolute;
+             right: -32rem;
+             top: 12rem;
+             border-radius: 2rem;
+         }
+    
+         #menu::before{
+            content: '';
+            visibility: hidden;
+            width: 3.6rem;
+            height: 2.4rem;
+            clip-path:  polygon(50% 0%, 0% 100%, 100% 100%);
+            background-color: #e2e2e2;
+            position: absolute;
+            top:-2rem;
+            margin-left: 1rem;
+        }
+     
+         #menu li:nth-child(1n){
+            border-bottom:  rgb(253, 252, 252) solid 0.3rem;
+            margin: 0;
+            border-radius: 2rem;
+         }
+    
+         #menu li a{
+            color:black;
+            padding: 2rem;
+            transition: 1.2s color;
+         }
+    
+          #menu li a:hover{
+              background-color: #9e9e9e;
+          }
+     
+         #navigation.active > #menu{
+            display: block;
+            visibility: visible;
+         }
+    
+        #navigation.active > #menu::before{
+             visibility: visible;
+         }
+    
+        #navigation.active #menu-hamburguer{
+            border-top-color: transparent;
+        }
+    
+        #navigation.active #menu-hamburguer::before{
+            transform: rotate(135deg);
+            background-color: #9e9e9e;
+        }
+    
+        #navigation.active #menu-hamburguer::after{
+            transform: rotate(-135deg);
+            position: relative;
+            top: -.95rem;
+            background-color: #9e9e9e;
+        }
+    
+         main{
+             /* display: flex;
+             align-items: center; */
+             display: block;
+             margin:0;
+             width: 100vw;
+             height: 100vh;
+         }
+       .principal{
+           /* display: flex; */
+           margin: auto;
+           display: block;
+           height: 65vh;
+       }
+    
+       .text-principal{
+            position: relative;
+            top: 40rem;
+            width: 100%;
+            align-items: center;
+            margin-left: 4rem;
+            width: 100vw;
+       }
+    
+       .principal h1{
+            font-size: 6.5rem;
+            font-weight: bold;
+            text-align: center;
+       }
+    
+       .principal p{
+            font-size: 3rem;
+            top: 18rem;
+            margin-left: 10rem;
+            width: 42rem;
+            text-align: center;
+        }
+        .principal-img{
+            position: absolute;
+            top:0;
+            display: block;
+            width: auto;
+            height: auto;
+            margin: 4rem 0 0 8rem;
+        }
+        img{
+            max-width: 140vw;
+            max-height: 100vh;
+            width: auto;
+            height: auto;
+       }
+       
+       form{
+           position: absolute;
+           width: 100vw;
+           top: 82rem;
+           margin-left: 16rem;
+           margin-top: 4rem;
+       }
+    
+       .button-pattern{
+           width: 94%;
+           border-radius: 2.6rem;
+           padding: 2rem;
+           font-size: 3.8rem;
+       }
     }
 
-     #menu{
-         visibility: hidden;
-         width: auto;
-         height: auto;
-         z-index: 1000;
-         background-color:#e2e2e2;
-         color: white;
-         position: absolute;
-         right: -20rem;
-         top: 10rem;
-         border-radius: 2rem;
-         /* transition:  1s all; */
-     }
+/* @media screen and (max-width: 1050px) and (min-width:481px) {
 
-     #menu::before{
-        content: '';
-        visibility: hidden;
-        width: 3.6rem;
-        height: 2.4rem;
-        clip-path:  polygon(50% 0%, 0% 100%, 100% 100%);
-        background-color: #e2e2e2;
-        position: absolute;
-        top:-2rem;
-        margin-left: 1rem;
-    }
- 
-     #menu li:nth-child(1n){
-        border-bottom:  rgb(253, 252, 252) solid 0.3rem;
-        margin: 0;
-        border-radius: 2rem;
-     }
-
-     #menu li a{
-        color:black;
-        padding: 2rem;
-        transition: 1.2s color;
-     }
-
-      #menu li a:hover{
-          background-color: #9e9e9e;
-      }
- 
-     #navigation.active > #menu{
-        display: block;
-        visibility: visible;
-     }
-
-    #navigation.active > #menu::before{
-         visibility: visible;
-     }
-
-    #navigation.active #menu-hamburguer{
-        border-top-color: transparent;
-    }
-
-    #navigation.active #menu-hamburguer::before{
-        transform: rotate(135deg);
-        background-color: #9e9e9e;
-    }
-
-    #navigation.active #menu-hamburguer::after{
-        transform: rotate(-135deg);
-        position: relative;
-        top: -.95rem;
-        background-color: #9e9e9e;
-    }
-
-     main{
-         display: flex;
-         align-items: center;
-         margin:0;
-     }
-   .principal{
-       display: flex;
-       margin: auto;
-   }
-
-   .text-principal{
-        position: relative;
-        top: 37rem;
-        width: 100%;
-        align-items: center;
-   }
-
-   .principal h1{
-        font-size: 6rem;
-        font-weight: bold;
-        text-align: center;
-   }
-
-   .principal p{
-        font-size: 3rem;
-        top: 16rem;
-        margin-left: 10rem;
-        width: 100%;
-        text-align: center;
-    }
-    .principal-img{
-        position: absolute;
-        top:0;
-        display: block;
-        margin-left: 3rem;
-    }
-   .principal img{
-        max-width: 100%;
-        width: auto;
-        height: auto;
-   }
-   
-   form{
-       position: absolute;
-       width: 100%;
-       top: 78rem;
-       margin-left: 14.5rem;
-       margin-top: 4rem;
-   }
-
-   .button-pattern{
-       width: 75%;
-       border-radius: 2.7rem;
-   }
-}
-
-@media screen and (max-width: 1050px) and (min-width:481px) {
-
-}
+} *
