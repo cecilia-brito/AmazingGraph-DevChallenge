@@ -85,8 +85,8 @@ main p{
 }
 
 img {
-    max-width:86vw;
-    max-height:76vh;
+    max-width:80vw;
+    max-height:70vh;
     width: auto;
     height: auto; 
 }
@@ -296,13 +296,14 @@ form{
             margin: 4rem 0 0 8rem;
         }
         img{
-            max-width: 140vw;
+            max-width: 56rem;
             max-height: 100vh;
             width: auto;
             height: auto;
        }
        
        form{
+           display: block;
            position: absolute;
            width: 100vw;
            top: 82rem;
@@ -318,6 +319,21 @@ form{
        }
     }
 
-/* @media screen and (max-width: 1050px) and (min-width:481px) {
+ @media screen and (max-width: 1050px) and (min-width:481px) {
+    header{
+        margin-bottom: 14rem;
+    }
 
-} *
+    header h2 a{
+        font-size: 6.4rem;
+    }
+
+    #navigation{
+        position: absolute;
+        right: -30rem;
+    }
+
+    #navigation ul li a{
+        font-size: 3.8rem;
+    }
+}
