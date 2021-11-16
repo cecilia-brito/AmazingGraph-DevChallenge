@@ -36,6 +36,23 @@
  <li>[✅]Animation Menu Closed</li>
 </ul>
 
+## Screenshots
+
+<div align="center">
+  <h3>Tela home desktop</h3>
+    <img src='/screenshots/print-home.png' alt='página de início em um computador'>
+</div>
+
+<div align="center">
+  <h3>Tela home mobile</h3>
+    <img src='/screenshots/mobile-home.png' alt='página de inpicio em um dispositivo móvel'>
+</div>
+
+<div align="center">
+  <h3>Tela de menu mobile aberto</h3>
+    <img src='/screenshots/menu-mobile.png' alt='página de menu em um dispositivo móvel'>
+</div>
+
 ## → Tecnologias Utilizadas
 
 - [✅] [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
