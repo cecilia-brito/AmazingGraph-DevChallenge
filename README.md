@@ -31,7 +31,7 @@
 <li>[✅]HTML Structure</li>
 <li>[✅]Desktop Style</li>
 <li>[✅]Mobile Style</li>
-<li>[ ]Tablet Style</li>
+<li>[✅]Tablet Style</li>
 <li>[✅]Menu Mobile with JS</li>
  <li>[✅]Animation Menu Closed</li>
 </ul>
