@@ -45,12 +45,17 @@
 
 <div align="center">
   <h3>Tela home mobile</h3>
-    <img src='/screenshots/mobile-home.png' alt='página de inpicio em um dispositivo móvel'>
+    <img src='/screenshots/mobile-home.png' alt='página de inicio em um dispositivo móvel'>
 </div>
 
 <div align="center">
   <h3>Tela de menu mobile aberto</h3>
     <img src='/screenshots/menu-mobile.png' alt='página de menu em um dispositivo móvel'>
+</div>
+
+<div align="center">
+  <h3>Tela home tablet</h3>
+    <img src='/screenshots/Captura de tela 2021-11-18 100350.png' alt='página de inicio em um dispositivo móvel estilo tablet'>
 </div>
 
 ## → Tecnologias Utilizadas
