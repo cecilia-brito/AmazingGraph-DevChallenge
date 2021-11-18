@@ -336,4 +336,12 @@ form{
     #navigation ul li a{
         font-size: 3.8rem;
     }
+
+    img{
+        margin-right: 2rem;
+    }
+
+    form{
+        margin-top: 6rem;
+    }
 }
