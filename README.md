@@ -39,7 +39,7 @@
 
 ## Resultado
 
-Confira o resultado <a href='https://cecilia-brito.github.io/AmazingGraph-DevChallenge/'>aqui</a>
+Confira o resultado <a href='https://cecilia-brito.github.io/'>aqui</a>
 ## Screenshots
 
 <div align="center">
